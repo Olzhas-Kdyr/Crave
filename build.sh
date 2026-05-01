@@ -12,6 +12,7 @@ vendor/xiaomi
 hardware/xiaomi
 vendor/lineage-priv/keys
 out/target/product/munch
+packages/apps/Launcher3
 )
 
 rm -rf "${remove[@]}"
@@ -36,6 +37,8 @@ git clone --depth=1 https://codeberg.org/munch-devs/android_vendor_xiaomi_miuica
 
 # My Keys
 git clone https://github.com/olzhas0986/keys vendor/lineage-priv/keys
+
+git clone https://github.com/olzhas0986/android_packages_apps_Launcher3 packages/apps/Launcher3
 
 cd kernel/xiaomi/munch
 git submodule update --init

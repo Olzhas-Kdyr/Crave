@@ -1,4 +1,7 @@
 # repo init
+rm -rf .repo/manifests
+rm -rf .repo/local_manifests
+rm -rf .repo/manifest
 repo init -u https://github.com/Lineage-Olzhas/manifest.git -b lineage-23.2 --git-lfs --depth 1
 
 # repo sync script

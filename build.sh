@@ -50,7 +50,5 @@ cd ../../..
 
 # Building 
 . build/envsetup.sh
-export SKIP_ABI_CHECKS=true
-make installclean
 lunch lineage_munch-bp4a-user
 m bacon

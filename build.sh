@@ -15,7 +15,7 @@ hardware/xiaomi
 rm -rf "${remove[@]}"
 
 # Deivce Trees
-git clone https://github.com/olzhas0986/android_device_xiaomi_munch -b 16.2-Rebased device/xiaomi/munch
+git clone https://github.com/olzhas0986/device_xiaomi_munch -b 16.2-Rebased device/xiaomi/munch
 
 # Vendor Trees
 git clone --depth=1 https://github.com/olzhas0986/android_vendor_xiaomi_munch -b 16.2-Rebased vendor/xiaomi/munch

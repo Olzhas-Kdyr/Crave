@@ -10,9 +10,6 @@ device/xiaomi
 kernel/xiaomi
 vendor/xiaomi
 hardware/xiaomi
-vendor/lineage-priv/keys
-out/target/product/munch
-packages/apps/Launcher3
 )
 
 rm -rf "${remove[@]}"

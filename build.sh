@@ -15,26 +15,25 @@ hardware/xiaomi
 rm -rf "${remove[@]}"
 
 # Deivce Trees
-git clone https://github.com/olzhas0986/device_xiaomi_munch -b 16.2-Rebased device/xiaomi/munch
+git clone https://github.com/Olzhas0986-AOSP/device_xiaomi_munch device/xiaomi/munch
 
 # Vendor Trees
-git clone --depth=1 https://github.com/olzhas0986/android_vendor_xiaomi_munch -b 16.2-Rebased vendor/xiaomi/munch
+git clone --depth=1 https://github.com/Olzhas0986-AOSP/vendor_xiaomi_munch vendor/xiaomi/munch
 
 # Munch Firmware
-git clone --depth=1 https://codeberg.org/munch-devs/android_vendor_xiaomi_munch-firmware.git vendor/xiaomi/munch-firmware
+git clone --depth=1 https://github.com/Olzhas0986-AOSP/vendor_xiaomi_munch-firmware vendor/xiaomi/munch-firmware
 
 # Kernel Tree
-git clone --depth=1 https://github.com/olzhas0986/android_kernel_xiaomi_sm8250 -b new kernel/xiaomi/sm8250
+git clone --depth=1 https://github.com/Olzhas0986-AOSP/kernel_xiaomi_sm8250 kernel/xiaomi/sm8250
 
 # Hardware Xiaomi
-git clone https://github.com/LineageOS/android_hardware_xiaomi hardware/xiaomi
+git clone https://github.com/Olzhas0986-AOSP/hardware_xiaomi hardware/xiaomi
 
 # MIUI Camera
-git clone --depth=1 https://codeberg.org/munch-devs/android_vendor_xiaomi_miuicamera.git vendor/xiaomi/miuicamera
+git clone --depth=1 https://github.com/Olzhas0986-AOSP/vendor_xiaomi_miuicamera vendor/xiaomi/miuicamera
 
 cd kernel/xiaomi/sm8250
 git submodule update --init
-rm -rf KernelSU-Next/userspace/su
 cd ../../..
 
 # Building 

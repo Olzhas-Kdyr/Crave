@@ -1,5 +1,5 @@
 # repo init
-repo init -u https://github.com/LineageOS/android.git -b lineage-23.2 --git-lfs --depth 1
+repo init -u https://github.com/crdroidandroid/android.git -b 16.0 --git-lfs --depth 1
 
 # repo sync script
 /opt/crave/resync.sh
